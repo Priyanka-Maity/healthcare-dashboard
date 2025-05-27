@@ -1,0 +1,149 @@
+
+.sidebar {
+  width: 232px;
+  height: 95vh;
+  background: #f9f8fe;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  border-bottom-left-radius: 20PX;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 12px;
+  color: #999;
+  margin: 20px 0 10px;
+}
+
+/* Nav list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Links */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 6px;
+  text-decoration: none;
+  color: rgb(153, 148, 148);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.sidebar-link .icon {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* Active tab */
+.sidebar-link.active,
+.sidebar-link:hover,
+.setting.active,
+.setting:hover {
+  color: #5c3a94;
+}
+
+/* Settings link */
+.setting {
+  padding: 15px;
+margin-bottom: 10px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.setting .icon {
+  margin-right: 10px;
+  font-size: 16px;
+}
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+    max-height: calc(100vh - 50px);
+    padding-left: 30px;
+  }
+
+  .sidebar-link,
+  .setting {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .sidebar-link .icon,
+  .setting .icon {
+    font-size: 14px;
+  }
+}
+@media (max-height: 1368px) {
+  .sidebar {
+    max-height: 100%; 
+  }
+}
+
+/* Smaller devices (phones) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+    padding-left: 20px;
+  }
+
+  .sidebar-link,
+  .setting {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .sidebar-link .icon,
+  .setting .icon {
+    font-size: 14px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    border-radius: 0;
+    justify-content: space-around;
+    max-height: none; /* No max height on mobile */
+    overflow-y: visible;
+  }
+
+  .sidebar-link,
+  .setting {
+    flex-direction: column;
+    font-size: 12px;
+    padding: 5px;
+    margin-bottom: 0;
+  }
+
+  .sidebar-link .icon,
+  .setting .icon {
+    margin: 0 0 4px 0;
+  }
+
+  .section-title {
+    display: none;
+  }
+}

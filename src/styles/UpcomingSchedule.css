@@ -1,0 +1,75 @@
+/* UpcomingSchedule.css */
+
+.upcoming-schedule {
+  padding-top: 20px;
+}
+.upcoming-schedule>h2{
+  color: #523482;
+}
+.columns-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.day-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.day-column h3 {
+  margin-top: 20px;
+  color: rgb(153, 148, 148);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Wrap appointment cards in a grid */
+.day-appointments {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-top: 13px;
+}
+
+.day-appointments > * {
+  background-color: #ddcdf7; 
+  padding: 15px;
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  .day-column {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+.day-column h3 {
+  margin-top: 20px;
+  color: rgb(153, 148, 148);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.day-appointments {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 13px;
+}
+
+@media (max-width: 600px) {
+  .day-appointments {
+    grid-template-columns: 1fr;
+  }
+}
+
+.day-appointments > * {
+  background-color: #ddcdf7; 
+  padding: 15px;
+  border-radius: 20px;
+}
+
+
+  

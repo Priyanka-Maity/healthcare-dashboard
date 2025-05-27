@@ -1,0 +1,13 @@
+.simple-card p,
+.simple-card small {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: #523482;
+  font-weight: 600;
+}
+.simple-card{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}

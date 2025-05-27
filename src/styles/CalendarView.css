@@ -1,0 +1,168 @@
+.calendar-view {
+    padding: 12px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: #523482;
+    margin-bottom: 15px;
+    padding: 0px 5px;
+  }
+  .calendar-header>h2{
+    font-size: 20px;
+  }
+  .calendar-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 30px;
+    color: #523482;
+  }
+  
+  .calendar-column {
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px 3px;
+    font-size: 15px;
+  }
+  
+  .weekday {
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  
+  .date {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #523482;
+    font-weight: bold;
+  }
+  
+  .date.active {
+    background-color: #3d56f0;
+    color: white;
+    padding: 4px 15px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .slots {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .slot {
+    font-size: 12px;
+    padding: 2px 2px;
+    border-radius: 8px;
+    color: #5c3a94;
+    font-weight: bold;
+  }
+  
+  .slot.highlighted {
+    background-color: #5c3a94;
+    color: white;
+  }
+  
+  .calendar-appointments {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .calendar-card {
+    min-width: auto;
+    border-radius: 25px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    justify-content: space-between;
+    padding-left: 17px;
+    padding-right: 10px;
+  }
+  .calendar-icon {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  
+  .card-title {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  @media (max-width: 1024px) {
+    .calendar-week {
+      gap: 15px;
+    }
+    
+    .calendar-column {
+      padding: 8px 2px;
+      font-size: 14px;
+    }
+    
+    .date {
+      font-size: 15px;
+      margin-bottom: 8px;
+      padding: 3px 10px;
+    }
+    
+    .calendar-appointments {
+      gap: 12px;
+    }
+    
+    .calendar-card {
+      flex-direction: column;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    
+    .calendar-icon {
+      margin-top: 0;
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .calendar-week {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+  
+    .calendar-column {
+      padding: 6px 2px;
+      font-size: 13px;
+    }
+  
+    .date {
+      font-size: 14px;
+      margin-bottom: 6px;
+      padding: 2px 8px;
+    }
+  
+    .calendar-appointments {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .calendar-card {
+      flex-direction: column;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .calendar-icon {
+      font-size: 18px;
+    }
+  
+    .card-title {
+      font-size: 14px;
+    }
+  }
+  
+  
+  

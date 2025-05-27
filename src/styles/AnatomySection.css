@@ -1,0 +1,125 @@
+.anatomy-img{
+    height: 350px;
+    width: auto;
+}
+.anatomy-imgView{
+    background-color: #f9f8fe;
+   margin-left: 20px;
+   margin-top: 20px;
+   border-radius: 20px;
+   position: relative;
+   display: inline-block;
+}
+.anatomy-header{
+    color: #5c3a94;
+}
+  .organ-label {
+    position: absolute;
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .heart-label {
+    top: 36%;      
+    left: 40%;
+    transform: translate(-50%, -100%);
+    padding: 10px 19px; 
+  }
+
+  .leg-label {
+    bottom: 43%;  
+    left: 20%;  
+    padding: 10px 24px;  
+  }
+  .green {
+    background-color: #5c3a94;
+  }
+  
+  .red {
+    background-color: #F44336;
+  }
+  
+  .orange {
+    background-color: #05eefa;
+    color: #5c3a94;
+  }
+  @media (max-width: 768px) {
+    .anatomy-img {
+      height: auto;
+      max-height: 300px;
+    }
+  
+    .organ-label {
+      font-size: 12px;
+      padding: 6px 8px;
+    }
+  
+    .heart-label {
+      top: 34%;
+      left: 42%;
+      padding: 8px 14px;
+    }
+  
+    .leg-label {
+      bottom: 40%;
+      left: 22%;
+      padding: 8px 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .anatomy-img {
+      height: auto;
+      max-height: 250px;
+    }
+  
+    .organ-label {
+      font-size: 11px;
+      padding: 4px 6px;
+    }
+    .heart-label {
+      top: 35%;   
+      left: 45%;  
+      padding: 6px 10px;
+    }
+  
+    .leg-label {
+      bottom: 38%;
+      left: 18%;
+      padding: 6px 10px;
+    }
+  }
+  @media (max-width: 1280px) {
+    .anatomy-img {
+      height: auto;
+      max-height: 320px; 
+      width: auto;
+    }
+  
+    .organ-label {
+      font-size: 13px;     
+      padding: 7px 12px;    
+    }
+  
+    .heart-label {
+      top: 35%;
+      left: 41%;
+      padding: 9px 16px;
+    }
+  
+    .leg-label {
+      bottom: 42%;
+      left: 21%;
+      padding: 9px 18px;
+    }
+  
+    .anatomy-imgView {
+      margin-left: 15px;
+      margin-top: 15px;
+      border-radius: 18px;
+    }
+  }
+  
