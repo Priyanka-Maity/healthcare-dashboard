@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/ActivityFeed.css';
+import '../styles/ActivityFeed.css';
 
 const ActivityFeed = () => {
     return(
