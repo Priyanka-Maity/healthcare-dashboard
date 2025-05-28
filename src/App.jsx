@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/App.css'
-import Sidebar from './components/sidebar'
+import Sidebar from './components/Sidebar'
 import Header from './components/Header'
 import DashboardMainContent from './components/DashboardMainContent'
 
